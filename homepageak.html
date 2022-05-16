@@ -4,8 +4,179 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Worth Feet</title>
+
+    <!-- custom css -->
+    <link href="./homepageak.css" type="text/css" rel="stylesheet" />
+
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet" />  
+    
+    <!-- Boostrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
 </head>
 <body>
-    <h1>I am Aung Khant Ko Ko.</h1>
+    
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-md bg-white navbar-light fixed-top">
+       <div class="container">   
+           <a class="navbar-brand" href="/">
+                <img src="./images/logo.png" />
+           </a>
+
+           <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+           </button>
+              
+            <div class="navbar-collapse collapse" id="mynavbar">
+                <ul class="navbar-nav me-md-auto ms-md-5">
+                    <li class="nav-item"><a class="nav-link fw-bold" href="#home">Home</a></li>
+                    <li class="nav-item dropdown ms-lg-5">
+                        <a id="exploredropdown" class="nav-link dropdown-toggle fw-bold" href="#" data-bs-toggle="dropdown">Explore</a>
+                        <ul class="dropdown-menu" aria-labelledby="#exploredropdown">
+                            <li><a class="dropdown-item" href="#">Instock</a></li>
+                            <li><a class="dropdown-item" href="#">Latest</a></li>
+                            <li><a class="dropdown-item" href="#">Popular</a></li>
+                            <li><a class="dropdown-item" href="#">Preorder</a></li>
+                            <li><a class="dropdown-item" href="#">Collections</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-lg-5"><a class="nav-link fw-bold" href="#services">Services</a></li>
+                    <li class="nav-item ms-lg-5"><a class="nav-link fw-bold" href="#contact">Contact Us</a></li>                 
+                </ul>
+                
+                <div class="mt-2 mt-sm-0">
+                    <div class="d-flex">
+                        <div class="text-secondary">Language</div>
+                        <div class="column me-3 ms-3"></div>
+                        <div class="dropdown">
+                            <a href="#" id="languagedropdown" class="dropdown-toggle text-secondary" data-bs-toggle="dropdown">
+                                ENG
+                            </a>
+                            <ul class="dropdown-menu" data-bs-target="#languagedropdown">
+                                <li>
+                                    <a href="#" class="dropdown-item text-secondary">Myanmar</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item text-secondary">English</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+       </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start homepage -->
+        <!-- Start home section -->
+        <section id="home" class="home">
+            <div class="w-100 h-100 d-flex justify-content-center align-items-center flex-column pt-4">
+                <h1 class="text-white text-uppercase fw-bold header">Worth Feet</h1>
+                <span class="text-white text-capitalize secondarytexts">Feel the legitimacy</span>
+            </div>
+        </section>
+        <!-- End home section -->
+
+        <!-- Start explore section -->
+        <section id="explore">
+            <div class="container py-5">
+                <h3 class="text-capitalize fw-bold">Latest releases</h3>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="imgboxeshome">
+                            <img src="./images/shoe1.png" alt="shoe1" />
+                        </div>                                     
+                        <div class="content">
+                            <strong class="product">Jordan 11 Low “Pure Violet”</strong>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <strong class="price">420000 MMK</strong>
+                                <a href="#" class="text-primary product-links me-1">See Details&nbsp;<i class="bi bi-arrow-right arrows"></i></a>                                
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="imgboxeshome">
+                            <img src="./images/shoe2.png" alt="shoe2" />
+                        </div>
+                        <div class="content">
+                            <strong class="product">Jordan 11 Low “Pure Violet”</strong>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>                                
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <strong class="price">420000 MMK</strong>
+                                <a href="#" class="text-primary product-links me-1">See Details&nbsp;<i class="bi bi-arrow-right arrows"></i></a>                                
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-12">
+                        <div class="imgboxeshome">
+                            <img src="./images/shoe3.png" alt="shoe3" />
+                        </div>
+                        <div class="content">
+                            <strong class="product">Jordan 11 Low “Pure Violet”</strong>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <strong class="price">420000 MMK</strong>
+                                <a href="#" class="text-primary product-links me-1">See Details&nbsp;<i class="bi bi-arrow-right arrows"></i></a>                                
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </section>
+        <!-- End explore section -->
+    <!-- End homepage -->
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Stars -->
+    <!-- <i class="bi bi-star-fill"></i> -->
+    <!-- Boostrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
 </html>
