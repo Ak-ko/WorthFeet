@@ -29,9 +29,9 @@
               
             <div class="navbar-collapse collapse" id="mynavbar">
                 <ul class="navbar-nav me-md-auto ms-md-5">
-                    <li class="nav-item"><a class="nav-link fw-bold" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold topnavitems" href="#home">Home</a></li>
                     <li class="nav-item dropdown ms-lg-5">
-                        <a id="exploredropdown" class="nav-link dropdown-toggle fw-bold" href="#" data-bs-toggle="dropdown">Explore</a>
+                        <a id="exploredropdown" class="nav-link dropdown-toggle fw-bold topnavitems" href="#" data-bs-toggle="dropdown">Explore</a>
                         <ul class="dropdown-menu" aria-labelledby="#exploredropdown">
                             <li><a class="dropdown-item" href="#">Instock</a></li>
                             <li><a class="dropdown-item" href="#">Latest</a></li>
@@ -40,8 +40,8 @@
                             <li><a class="dropdown-item" href="#">Collections</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item ms-lg-5"><a class="nav-link fw-bold" href="#services">Services</a></li>
-                    <li class="nav-item ms-lg-5"><a class="nav-link fw-bold" href="#contact">Contact Us</a></li>                 
+                    <li class="nav-item ms-lg-5"><a class="nav-link fw-bold topnavitems" href="#services">Services</a></li>
+                    <li class="nav-item ms-lg-5"><a class="nav-link fw-bold topnavitems" href="#contact">Contact Us</a></li>                 
                 </ul>
                 
                 <div class="mt-2 mt-sm-0">
@@ -80,61 +80,68 @@
 
         <!-- Start explore section -->
         <section id="explore">
-            <div class="container py-5">
-                <h3 class="text-capitalize fw-bold">Latest releases</h3>
+            <div class="container-lg container-fluid py-5" id="latest">
+                <h3 class="text-capitalize fw-bold text-lg-start text-md-start text-center">Latest releases</h3>
+
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 col-12">
-                        <div class="imgboxeshome">
-                            <img src="./images/shoe1.png" alt="shoe1" />
-                        </div>                                     
-                        <div class="content">
-                            <strong class="product fs-3">Jordan 11 Low “Pure Violet”</strong>
-                            <div class="stars">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
+                    <div class="col-md-4 col-12 ">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="imgboxeshome">
+                                <img src="./images/shoe1.png" class="img-fluid" alt="shoe1" />
+                            </div>                                     
+                            <div class="content">
+                                <strong class="product fs-3">Jordan 11 Low “Pure Violet”</strong>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <strong class="price">420000 MMK</strong>
+                                    <a href="#" class="text-primary product-links me-1">See Details&nbsp;<i class="bi bi-arrow-right arrows"></i></a>                                
+                                </div>                            
                             </div>
-                            <div class="d-flex justify-content-between">
-                                <strong class="price">420000 MMK</strong>
-                                <a href="#" class="text-primary product-links me-1">See Details&nbsp;<i class="bi bi-arrow-right arrows"></i></a>                                
-                            </div>                            
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-12">
-                        <div class="imgboxeshome">
-                            <img src="./images/shoe2.png" alt="shoe2" />
-                        </div>
-                        <div class="content">
-                            <strong class="product fs-3">Nike KIIIONDO</strong>
-                            <div class="stars">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>                                
+                    <div class="col-md-4 col-12 my-lg-0 my-md-0 my-4">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="imgboxeshome">
+                                <img src="./images/shoe2.png" class="img-fluid" alt="shoe2" />
                             </div>
-                            <div class="d-flex justify-content-between">
-                                <strong class="price">450000 MMK</strong>
-                                <a href="#" class="text-primary product-links me-1">See Details&nbsp;<i class="bi bi-arrow-right arrows"></i></a>                                
-                            </div>                            
+                            <div class="content">
+                                <strong class="product fs-3">Nike KIIIONDO</strong>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>                                
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <strong class="price">450000 MMK</strong>
+                                    <a href="#" class="text-primary product-links me-1">See Details&nbsp;<i class="bi bi-arrow-right arrows"></i></a>                                
+                                </div>                                 
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-12">
-                        <div class="imgboxeshome">
-                            <img src="./images/shoe3.png" alt="shoe3" />
-                        </div>
-                        <div class="content">
-                            <strong class="product fs-3">Dunk Low Distrupt</strong>
-                            <div class="stars">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
+                    <div class="col-md-4 col-12 ">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="imgboxeshome">
+                                <img src="./images/shoe3.png" class="img-fluid" alt="shoe3" />
                             </div>
-                            <div class="d-flex justify-content-between">
-                                <strong class="price">270000 MMK</strong>
-                                <a href="#" class="text-primary product-links me-1">See Details&nbsp;<i class="bi bi-arrow-right arrows"></i></a>                                
+                            <div class="content">
+                                <strong class="product fs-3">Dunk Low Distrupt</strong>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <strong class="price">270000 MMK</strong>
+                                    <a href="#" class="text-primary product-links me-1">See Details&nbsp;<i class="bi bi-arrow-right arrows"></i></a>                                
+                                </div>                            
                             </div>                            
                         </div>
                     </div>
@@ -149,64 +156,71 @@
 
         <!-- Start instock section -->
         <section id="instock">
-            <div class="container py-5">
-                <h3 class="text-capitalize fw-bold">Instock products</h3>
+            <div class="container-lg container-fluid py-md-5 py-sm-3">
+                <h3 class="text-capitalize fw-bold text-lg-start text-md-start text-sm-center mb-4">Instock products</h3>
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 col-12">
-                        <div class="imgboxeshome">
-                            <img src="./images/shoe4.png" alt="shoe4" />
-                        </div>                                     
-                        <div class="content">
-                            <strong class="product fs-3">Air Jordan “Marina Blue”</strong>
-                            <div class="stars">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
+                    <div class="col-md-4 col-12">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="imgboxeshome">
+                                <img src="./images/shoe4.png" class="img-fluid" alt="shoe4" />
+                            </div>                                     
+                            <div class="content">
+                                <strong class="product fs-3">Air Jordan “Marina Blue”</strong>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
                             </div>
                             <div class="d-flex justify-content-between">
                                 <strong class="price">560000 MMK</strong>
                                 <a href="#" class="text-primary product-links me-1">See Details&nbsp;<i class="bi bi-arrow-right arrows"></i></a>                                
-                            </div>                            
+                            </div>
+                            </div>   
+                        </div>                         
+                    </div>
+                                        
+                    <div class="col-md-4 col-12 my-lg-0 my-md-0 my-4">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="imgboxeshome">
+                                <img src="./images/shoe5.png" class="img-fluid" alt="shoe5" />
+                            </div>
+                            <div class="content">
+                                <strong class="product fs-3">Converse Chuck “Black”</strong>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>                                
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <strong class="price">210000 MMK</strong>
+                                    <a href="#" class="text-primary product-links me-1">See Details&nbsp;<i class="bi bi-arrow-right arrows"></i></a>                                
+                                </div>                            
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-12">
-                        <div class="imgboxeshome">
-                            <img src="./images/shoe5.png" alt="shoe5" />
-                        </div>
-                        <div class="content">
-                            <strong class="product fs-3">Converse Chuck “Black”</strong>
-                            <div class="stars">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>                                
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
+                    <div class="col-md-4 col-12">
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                            <div class="imgboxeshome">
+                                <img src="./images/shoe6.png" class="img-fluid" alt="shoe6" />
                             </div>
-                            <div class="d-flex justify-content-between">
-                                <strong class="price">210000 MMK</strong>
-                                <a href="#" class="text-primary product-links me-1">See Details&nbsp;<i class="bi bi-arrow-right arrows"></i></a>                                
-                            </div>                            
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-12">
-                        <div class="imgboxeshome">
-                            <img src="./images/shoe6.png" alt="shoe6" />
-                        </div>
-                        <div class="content">
-                            <strong class="product fs-3">Air Jordan 1 “Mocha”</strong>
-                            <div class="stars">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
+                            <div class="content">
+                                <strong class="product fs-3">Air Jordan 1 “Mocha”</strong>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <strong class="price">495000 MMK</strong>
+                                    <a href="#" class="text-primary product-links me-1">See Details&nbsp;<i class="bi bi-arrow-right arrows"></i></a>                                
+                                </div>                            
                             </div>
-                            <div class="d-flex justify-content-between">
-                                <strong class="price">495000 MMK</strong>
-                                <a href="#" class="text-primary product-links me-1">See Details&nbsp;<i class="bi bi-arrow-right arrows"></i></a>                                
-                            </div>                            
                         </div>
                     </div>
                 </div>
@@ -301,6 +315,21 @@
 
     <!-- Stars -->
     <!-- <i class="bi bi-star-fill"></i> -->
+
+    <!-- Custom Js -->
+    <script type="text/javascript">
+        const navitems = document.querySelectorAll('.topnavitems');
+        navitems.forEach(item => {
+            item.addEventListener('click', e => {     
+                item.classList.add('activenav');
+                navitems.forEach(navitem => {                     
+                    if(item !== navitem){                        
+                        navitem.classList.remove('activenav');
+                    }                                                                              
+                })
+            })
+        })
+    </script>
     <!-- Boostrap js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     
