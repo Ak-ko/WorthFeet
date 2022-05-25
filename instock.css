@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+:root{
+    --img-width: 409px;
+    --img-height: 426px;
+    --box-color:#F5F5F5;
+}
+
+*, *::before, *::after{
+    box-sizing:border-box;
+}
+body {
+    margin:0;
+    padding:0;
+    font-family:'Poppins', sans-serif !important;
+}
+
+ul {
+    margin:0;
+    padding:0;
+}
+
+body a {
+    text-decoration:none;
+}
+
+.active {
+    background-color:#000!important;
+}
+
+.brandselectors{
+    background:none!important;
+    background-image:url(./images/select.png)!important;
+    background-repeat:no-repeat!important;
+    background-position:95% !important;
+    background-size:1.2em!important;  
+    
+    background-color:var(--box-color)!important;
+    border:none!important;
+    outline:none!important;
+}
+
+.brandselectors:focus,
+.searchinputs:focus 
+{
+    box-shadow:none!important;
+    border:none!important;
+    outline:none!important;
+}
+
+.searchinputs{
+    background:none!important;
+    background-image:url(./images/searchicon.png)!important;
+    background-repeat:no-repeat!important;
+    background-position:95% !important;
+    background-size:1.2em!important;  
+    
+    background-color:var(--box-color)!important;
+    border:none!important;
+    outline:none!important;
+}
+
+@media screen and (max-width:495px){
+    .navitemsexplore{
+        font-size:0.55em !important;
+    }
+}
