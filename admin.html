@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore | Instock</title>
+    <title>Admin | Instock</title>
 
     <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet" />  
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
 
     <!-- custom css -->
-    <link href="./instock.css" type="text/css" rel="stylesheet" />
+    <link href="./admin.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
     <section id="instock" class="py-3">
@@ -44,7 +44,10 @@
                             <option value="conv">Converse</option>
                         </select>                                    
                     </div>
-                    <div class="col-lg-8 col-mmd-8 col-12 mt-lg-0 mt-md-0 mt-3">
+                    <div class="col-lg-3 col-md-3 col-12 mt-lg-0 mt-md-0 mt-3">
+                        <button class="btn btn-dark rounded-0 d-block w-100"><i class="bi bi-plus-lg me-2"></i>Add item</button>
+                    </div> 
+                    <div class="col-lg-5 col-md-5 col-12 mt-lg-0 mt-md-0 mt-3">
                         <div class="form-group">
                             <input type="text" name="search" class="form-control rounded-0 fw-bold px-4 searchinputs" placeholder="Search" />
                         </div>
@@ -53,11 +56,11 @@
             </div>
 
             <main>
-                <div class="row mt-4">
-                    <div class="col-lg-3 col-md-3 col-12">
-                        <div class="card mb-3">
-                            <img src="./images/shoe1.png" class="card-img-top p-3 rounded-0" alt="shoe1" />
-                            <div class="card-body">
+                <div class="row gx-xl-5 gx-lg-4 gx-md-5 gx-0 gy-lg-2 gy-md-3 gy-sm-2 gy-2 mt-4 cardcontainers">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                        <div class="card rounded-0">
+                            <img src="./images/shoe1.png" class="card-img-top p-3 rounded-0 cardimgs" alt="shoe1" />
+                            <div class="card-body content">
                                 <h5 class="card-title fw-bold m-0 p-0 mb-2">Jordan 11 Low “Pure Violet”</h5>
                                 <p class="card-text fw-bold m-0 p-0">320000 MMK <span class="text-danger">(1 item left)</span></p>
                                 <div class="stars" style="color:gold;">
@@ -69,10 +72,11 @@
                                 </div>
                                 <div class="text-center mt-3"><a href="#">See Details&nbsp;<i class="bi bi-arrow-right arrows"></i></a></div>
                             </div>
+                            <div class="edit"><i class="bi bi-pencil-fill me-2"></i><span>Edit</span></div>
                         </div>
                     </div>                    
-                    <div class="col-lg-3 col-md-3 col-12">
-                        <div class="card mb-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                        <div class="card rounded-0">
                             <img src="./images/shoe1.png" class="card-img-top p-3 rounded-0" alt="shoe1" />
                             <div class="card-body">
                                 <h5 class="card-title m-0 p-0 mb-2 fw-bold">Jordan 11 Low “Pure Violet”</h5>
@@ -88,8 +92,8 @@
                             </div>
                         </div>
                     </div>                    
-                    <div class="col-lg-3 col-md-3 col-12">
-                        <div class="card mb-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                        <div class="card rounded-0">
                             <img src="./images/shoe1.png" class="card-img-top p-3 rounded-0" alt="shoe1" />
                             <div class="card-body">
                                 <h5 class="card-title m-0 p-0 mb-2 fw-bold">Jordan 11 Low “Pure Violet”</h5>
@@ -105,8 +109,8 @@
                             </div>
                         </div>
                     </div>                    
-                    <div class="col-lg-3 col-md-3 col-12">
-                        <div class="card mb-3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+                        <div class="card rounded-0">
                             <img src="./images/shoe1.png" class="card-img-top p-3 rounded-0" alt="shoe1" />
                             <div class="card-body">
                                 <h5 class="card-title m-0 p-0 mb-2 fw-bold">Jordan 11 Low “Pure Violet”</h5>
@@ -126,7 +130,7 @@
             </main>
 
             <!-- Start Pagination -->
-            <nav>
+            <nav class="mt-4">
                 <ul class="pagination justify-content-center">
                     <li class="page-item"><a href="#" class="page-link me-2 text-dark rounded-0"><i class="bi bi-chevron-left"></i></a></li>
                     <li class="page-item"><a href="#" class="page-link me-2 text-dark border-0 activepage paginations">1</a></li>
